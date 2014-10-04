@@ -19,7 +19,7 @@ config = ConfigParser.ConfigParser()
 config.read('config.ini')
 
 consumer_key = config.get('evernote', 'consumer_key', 0)
-consumer_secret = config.get('general', 'consumer_secret', 0)
+consumer_secret = config.get('evernote', 'consumer_secret', 0)
 
 
 @app.route('/')
