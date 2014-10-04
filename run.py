@@ -161,6 +161,11 @@ def feed():
     feed = feedparser.parse( google_news_rss_url )
     return render_template('feed.mak', name='mako', feed=feed)
 
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.mak', name='mako')
+
+
 @app.route('/story')
 def story():
     return render_template('story.mak', name='mako')
