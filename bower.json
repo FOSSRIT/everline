@@ -1,0 +1,16 @@
+{
+  "name": "nethervote",
+  "version": "0.0.0",
+  "homepage": "https://github.com/FOSSRIT/nethervote",
+  "authors": [
+    "Mike Nolan <me@michael-nolan.com>",
+    "Remy Decausemaker <remyd@civx.us>",
+    "Wilfried Hounyo <wilfried.hounyo@gmail.com>"
+  ],
+  "description": "Project for HackUpstate utilizing the Evernote API to build Civic Hacking Data Visualizations",
+  "license": "AGPLv3+",
+  "dependencies": {
+    "angularjs": "~1.2.26",
+    "timeline.js": "~2.33.1"
+  }
+}

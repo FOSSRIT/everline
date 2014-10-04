@@ -2,3 +2,6 @@
 *.egg
 config.ini
 .venv
+bower_components/
+node_modules/
+static/js/*.js
