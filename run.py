@@ -149,7 +149,9 @@ def postevernote():
     # attributes such as the new note's unique GUID.
     created_note = note_store.createNote(note)
 
-    print "Successfully created a new note with GUID: ", created_note.guid
+    status = "Successfully created a new note with GUID: " + created_note.guid
+    print status
+    return status
 
 @app.route('/about')
 def about():
