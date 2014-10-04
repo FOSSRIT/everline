@@ -46,6 +46,7 @@ To install gulp:
 <code>npm install gulp</code>
 
 <em>linux hack</em>
+---
 If you don't want to install gulp globally, you can run manually like so:
 <code>./node_modules/gulp/bin/gulp.js</code>
 
