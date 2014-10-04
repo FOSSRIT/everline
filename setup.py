@@ -33,6 +33,7 @@ setup(
         "flask-oauth",
         "evernote",
         "flask-mako",
+        "feedparser",
     ],
     #TODO: Deal with entry_points
     #entry_points="""

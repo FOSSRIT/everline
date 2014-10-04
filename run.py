@@ -6,6 +6,7 @@ License: AGPLv3+
 """
 
 import ConfigParser
+import feedparser
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 from flask import redirect, url_for
@@ -150,11 +151,15 @@ def postevernote():
 
     print "Successfully created a new note with GUID: ", created_note.guid
 
-
 @app.route('/about')
 def about():
     return render_template('about.mak', name='mako')
 
+@app.route('/feed')
+def feed():
+    d = google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format('iphone6') + "&output=rss"
+    feed = feedparser.parse( google_news_rss_url )
+    return render_template('feed.mak', name='mako', feed=feed)
 
 @app.route('/story')
 def story():
