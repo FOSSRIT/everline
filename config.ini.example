@@ -2,4 +2,5 @@
 consumer_key='username'
 consumer_secret='XXXXXXXXXXXXXXXX'
 application_name='XXXXXXXXXXXXXXXX'
+dev_token='XXXXXXXXXXXXXXXX'
 
