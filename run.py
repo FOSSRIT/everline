@@ -4,9 +4,9 @@ Author: Remy D <remyd@civx.us>
         Mike Nolan <me@michael-nolan.com>
 License: AGPLv3+
 """
-import os
 
 import ConfigParser
+import feedparser
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 from flask import redirect, url_for
@@ -31,8 +31,7 @@ def index():
     userStore = client.get_user_store()
     user = userStore.getUser()
     print user.username
-    return render_template('index.mak', name='mako', consumer_key=consumer_key,
-                           consumer_secret=consumer_secret)
+    return render_template('index.mak', name='mako', consumer_key=consumer_key)
 
 
 @app.route('/postevernote')
@@ -152,10 +151,19 @@ def postevernote():
 
     print "Successfully created a new note with GUID: ", created_note.guid
 
-
 @app.route('/about')
 def about():
     return render_template('about.mak', name='mako')
+
+@app.route('/feed')
+def feed():
+    d = google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format('iphone6') + "&output=rss"
+    feed = feedparser.parse( google_news_rss_url )
+    return render_template('feed.mak', name='mako', feed=feed)
+
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.mak', name='mako')
 
 
 @app.route('/story')
