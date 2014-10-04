@@ -5,14 +5,32 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat');
 
 gulp.task('bower', function () {
-    return bowerSrc()
-        .pipe(gulp.dest('bower'));
+    return bowerSrc();
 });
 
-gulp.task('bower-concat', ['bower'], function () {
+gulp.task('bower-extract-bootstrap-fonts', ['bower'], function () {
+    return gulp
+        .src([
+            'bower_components/bootstrap/fonts/*'
+        ])
+        .pipe(gulp.dest('static/fonts/'));
+});
+
+gulp.task('bower-concat-css', ['bower'], function () {
+    return gulp
+        .src([
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'bower_components/bootstrap/dist/css/bootstrap-theme.css'
+        ])
+        .pipe(concat('bower-deps.min.css'))
+        .pipe(gulp.dest('static/css/'));
+});
+
+gulp.task('bower-concat-js', ['bower'], function () {
     return gulp
         .src([
             'bower_components/angularjs/angular.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
             'bower_components/timeline/timeline.min.js'
         ])
         .pipe(concat('bower-deps.min.js'))
@@ -20,7 +38,7 @@ gulp.task('bower-concat', ['bower'], function () {
         .pipe(gulp.dest('static/js/'));
 });
 
-gulp.task('scripts', ['bower-concat'], function () {
+gulp.task('scripts', ['bower-concat-js', 'bower-concat-css', 'bower-extract-bootstrap-fonts'], function () {
     return gulp.
         src('static/js/src/*.js')
         .pipe(concat('main-deps.min.js'))
@@ -31,8 +49,5 @@ gulp.task('scripts', ['bower-concat'], function () {
 
 gulp.task('default', ['scripts'], function () {
     rimraf('bower_components', function () {
-    });
-
-    rimraf('bower', function () {
     });
 });
