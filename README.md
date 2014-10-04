@@ -50,6 +50,11 @@ To install gulp:
 If you don't want to install gulp globally, you can run manually like so:
 <code>./node_modules/gulp/bin/gulp.js</code>
 
+<em>Windows hack</em>
+---
+If you cannot just run `gulp`:
+`node .\node_modules\gulp\bin\gulp.js`
+
 Run the server
 ----
  <code>python app.py</code>
