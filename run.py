@@ -4,7 +4,6 @@ Author: Remy D <remyd@civx.us>
         Mike Nolan <me@michael-nolan.com>
 License: AGPLv3+
 """
-import os
 
 import ConfigParser
 from flask import Flask
@@ -31,8 +30,7 @@ def index():
     userStore = client.get_user_store()
     user = userStore.getUser()
     print user.username
-    return render_template('index.mak', name='mako', consumer_key=consumer_key,
-                           consumer_secret=consumer_secret)
+    return render_template('index.mak', name='mako', consumer_key=consumer_key)
 
 
 @app.route('/postevernote')
