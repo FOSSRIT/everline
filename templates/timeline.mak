@@ -11,7 +11,7 @@
                 type:       'timeline',
                 width:      '800',
                 height:     '600',
-                source:     '/static/data/example_data.json',
+                source:     '/static/data/example_json.json',
                 embed_id:   'my-timeline'
             });
         });
