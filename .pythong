@@ -1,0 +1,28 @@
+author: Mike Nolan & Remy D
+bin_dir: /home/decause/code/hackupstate/2014/Nethervote/bin
+classifiers: ['Topic :: Education']
+description: Project for HackUpstate 2014 Using Flask and Evernote for Civic Hacking
+directories: [/home/decause/code/hackupstate/2014/Nethervote, /home/decause/code/hackupstate/2014/Nethervote/bin,
+  /home/decause/code/hackupstate/2014/Nethervote/tests, /home/decause/code/hackupstate/2014/Nethervote/docs,
+  /home/decause/code/hackupstate/2014/Nethervote/Nethervote]
+docs_dir: /home/decause/code/hackupstate/2014/Nethervote/docs
+email: <me@michael-nolan.com> <remyd@civx.us>
+encoding: utf8
+files: [/home/decause/code/hackupstate/2014/Nethervote/MANIFEST.in, /home/decause/code/hackupstate/2014/Nethervote/setup.py,
+  /home/decause/code/hackupstate/2014/Nethervote/Nethervote/__init__.py, /home/decause/code/hackupstate/2014/Nethervote/tests/__init__.py,
+  /home/decause/code/hackupstate/2014/Nethervote/tests/Nethervote_tests.py]
+init_file: null
+keywords: [evernote, flask, python, civic hacking]
+license: AGPLv3+
+manifest: /home/decause/code/hackupstate/2014/Nethervote/MANIFEST.in
+name: Nethervote
+project_dir: /home/decause/code/hackupstate/2014/Nethervote
+requires: [flask, flask-oauth, evernote]
+setup_file: /home/decause/code/hackupstate/2014/Nethervote/setup.py
+shortname: Nethervote
+source_dir: /home/decause/code/hackupstate/2014/Nethervote/Nethervote
+test_file: /home/decause/code/hackupstate/2014/Nethervote/tests/Nethervote_tests.py
+test_init_file: /home/decause/code/hackupstate/2014/Nethervote/tests/__init__.py
+tests_dir: /home/decause/code/hackupstate/2014/Nethervote/tests
+url: http://fossrit.github.io/nethervote
+version: 0.1.0

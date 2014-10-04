@@ -1,0 +1,12 @@
+MANIFEST.in
+distribute_setup.py
+setup.py
+Nethervote.egg-info/PKG-INFO
+Nethervote.egg-info/SOURCES.txt
+Nethervote.egg-info/dependency_links.txt
+Nethervote.egg-info/not-zip-safe
+Nethervote.egg-info/requires.txt
+Nethervote.egg-info/top_level.txt
+nethervote/__init__.py
+tests/Nethervote_tests.py
+tests/__init__.py

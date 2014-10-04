@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Nethervote
+Version: 0.1.0
+Summary: Project for HackUpstate 2014 Using Flask and Evernote for Civic Hacking
+Home-page: http://fossrit.github.io/nethervote
+Author: Mike Nolan & Remy D
+Author-email: <me@michael-nolan.com> <remyd@civx.us>
+License: AGPLv3+
+Description: UNKNOWN
+Keywords: evernote flask python civic hacking
+Platform: UNKNOWN
+Classifier: Topic :: Education
