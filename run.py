@@ -18,13 +18,14 @@ mako = MakoTemplates(app)
 config = ConfigParser.ConfigParser()
 config.read('config.ini')
 
-CLIENT_ID = config.get('general', 'CLIENT_ID', 0)
-CLIENT_SECRET = config.get('general', 'CLIENT_SECRET', 0)
+consumer_key = config.get('evernote', 'consumer_key', 0)
+consumer_secret = config.get('general', 'consumer_secret', 0)
 
 
 @app.route('/')
 def index():
-    return render_template('index.mak', name='mako', CLIENT_ID=CLIENT_ID)
+    return render_template('index.mak', name='mako', consumer_key=consumer_key,
+                           consumer_secret=consumer_secret)
 
 
 @app.route('/about')
