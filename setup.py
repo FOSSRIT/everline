@@ -32,6 +32,7 @@ setup(
         "flask",
         "flask-oauth",
         "evernote",
+        "flask-mako",
     ],
     #TODO: Deal with entry_points
     #entry_points="""
