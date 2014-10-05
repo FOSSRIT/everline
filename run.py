@@ -65,20 +65,11 @@ def getevernote():
         result_spec)
 
     notes = {"timeline": {
-        "headline": "Sh*t People Say",
+        "headline": "Evernote to Timeline.js",
         "type": "default",
-        "text": "People say stuff",
+        "text": "Automatic Tweets, Wikipedia, Youtube",
         "startDate": "2014,8,26",
         "date": [],
-        "era": [
-            {
-                "startDate": "2014,06,10",
-                "endDate": "2014,08,11",
-                "headline": "Headline Goes Here",
-                "text": "<p>Body text goes here, some HTML is OK</p>",
-                "tag": "This is Optional"
-            }
-        ]
     }}
 
     for note in result_list.notes:
