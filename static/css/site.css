@@ -56,3 +56,7 @@ body, html {
     height: 40px;
 }
 
+#timeline {
+    padding: 10px 0;
+    background-color: #FFF;
+}
