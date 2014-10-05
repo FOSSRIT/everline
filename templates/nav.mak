@@ -5,9 +5,9 @@
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane fade in active" id="home"><p>home</p></div>
+  <div class="tab-pane fade" id="home"><p>home</p></div>
   <div class="tab-pane fade" id="about"><p>about</p></div>
-  <div class="tab-pane fade" id="timeline">
+  <div class="tab-pane fade in active" id="timeline">
     <%include file="timeline.mak" />
   </div>
 </div>
