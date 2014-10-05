@@ -5,5 +5,5 @@ config.ini
 .venv
 bower_components/
 node_modules/
-static/js/*.js
 *-deps.min.*
+static/js/deps/

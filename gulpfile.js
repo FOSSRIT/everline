@@ -33,14 +33,12 @@ gulp.task('bower-concat-js', ['bower'], function () {
             'bower_components/jquery/dist/jquery.js',
             'bower_components/bootstrap/dist/js/bootstrap.js',
         ])
-        .pipe(gulp.dest('static/js/'));
+        .pipe(gulp.dest('static/js/deps/'));
 });
 
 gulp.task('scripts', ['bower-concat-js', 'bower-concat-css', 'bower-extract-bootstrap-fonts'], function () {
     return gulp.
         src('static/js/src/*.js')
-        .pipe(concat('main-deps.min.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('static/js/'));
 });
 
