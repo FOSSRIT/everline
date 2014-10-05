@@ -9,6 +9,7 @@ import ConfigParser
 import feedparser
 import json
 import urllib2
+import re
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 from flask import redirect, url_for, request
@@ -84,8 +85,8 @@ def getevernote():
         content = note_store.getNoteContent(dev_token, note.guid)
         content_list = content.split(',', 3)
         media = False
-        if (content.contains(":wikipedia:") or content.contains(":twitter:") or
-                content.contains(":youtube:")):
+        if (":wikipedia:" in content or ":twitter:" in content or
+                ":youtube:" in content):
             media = True
 
         note_json = {
@@ -94,6 +95,14 @@ def getevernote():
             "headline": note.title,
             "text": content_list[3]
         }
+
+        if media:
+            m = re.search('.+:\w+:\s([\w:/\.]+).*', content)
+            asset = {
+                "media": m.group(1)
+            }
+            note_json['asset'] = asset
+
         notes['timeline']['date'].append(note_json)
 
     return json.dumps(notes)
@@ -229,7 +238,8 @@ def feed():
     query = request.args.get('q').lower()
     request_type = request.args.get('type').lower()
     if request_type == 'news':
-        google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format(query) + "&output=rss"
+        google_news_rss_url = "https://news.google.com/news/feeds?q="
+        + "{0}".format(query) + "&output=rss"
         feed = feedparser.parse(google_news_rss_url).entries
         return render_template('feed.mak', request_type=request_type,
                                name='mako', feed=feed)
