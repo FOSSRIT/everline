@@ -174,11 +174,11 @@ def feed():
     request_type = request.args.get('type').lower()
     if request_type == 'news':
         google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format(query) + "&output=rss"
-        feed = feedparser.parse( google_news_rss_url )
+        feed = feedparser.parse( google_news_rss_url ).entries
         return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
     elif request_type == 'bills':
         bills_response = urllib2.urlopen("http://congress.api.sunlightfoundation.com/bills/search?query=" + "{0}".format(query) + "&apikey=9b21768d77c648a39ba9b9e77cda089c")
-        feed = json.loads( bills_response.read().decode(bills_response.info().getparam('charset') or 'utf-8') )
+        feed = json.loads( bills_response.read().decode(bills_response.info().getparam('charset') or 'utf-8') )['results']
         return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
 
 @app.route('/timeline')
