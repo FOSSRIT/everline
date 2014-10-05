@@ -6,4 +6,5 @@ config.ini
 bower_components/
 node_modules/
 *-deps.min.*
+.ropeproject/
 static/js/deps/

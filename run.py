@@ -14,6 +14,8 @@ from flask.ext.mako import MakoTemplates, render_template
 from flask import redirect, url_for, request
 
 from evernote.api.client import EvernoteClient
+from evernote.edam.notestore.ttypes import NoteFilter, NotesMetadataResultSpec
+from evernote.edam.type.ttypes import NoteSortOrder
 
 app = Flask(__name__)
 app.template_folder = "templates"
@@ -39,10 +41,27 @@ def index():
 @app.route('/getevernote')
 def getevernote():
     client = EvernoteClient(token=dev_token)
-    userStore = client.get_user_store()
-    user = userStore.getUser()
+    updated_filter = NoteFilter(order=NoteSortOrder.UPDATED)
+    offset = 0
+    max_notes = 10
+    result_spec = NotesMetadataResultSpec(includeTitle=True)
     note_store = client.get_note_store()
-    print note_store.listNotebooks()
+    result_list = note_store.findNotesMetadata(
+        dev_token,
+        updated_filter,
+        offset,
+        max_notes,
+        result_spec)
+
+    notes = []
+    for note in result_list.notes:
+        note_json = {
+            "title": note.title,
+            "content": note_store.getNoteContent(dev_token, note.guid)
+        }
+        notes.append(note_json)
+
+    return json.dumps(notes)
 
 
 @app.route('/postevernote')
@@ -164,22 +183,30 @@ def postevernote():
     print status
     return status
 
+
 @app.route('/about')
 def about():
     return render_template('about.mak', name='mako')
+
 
 @app.route('/feed')
 def feed():
     query = request.args.get('q').lower()
     request_type = request.args.get('type').lower()
     if request_type == 'news':
-        google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format(query) + "&output=rss"
-        feed = feedparser.parse( google_news_rss_url ).entries
-        return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
+        google_news_rss_url = "https://news.google.com/news/feeds?q="
+        + "{0}".format(query) + "&output=rss"
+        feed = feedparser.parse(google_news_rss_url).entries
+        return render_template('feed.mak', request_type=request_type,
+                               name='mako', feed=feed)
     elif request_type == 'bills':
-        bills_response = urllib2.urlopen("http://congress.api.sunlightfoundation.com/bills/search?query=" + "{0}".format(query) + "&apikey=9b21768d77c648a39ba9b9e77cda089c")
-        feed = json.loads( bills_response.read().decode(bills_response.info().getparam('charset') or 'utf-8') )['results']
-        return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
+        bills_response = urllib2.urlopen(
+            "http://congress.api.sunlightfoundation.com/bills/search?query="
+            + "{0}".format(query) + "&apikey=9b21768d77c648a39ba9b9e77cda089c")
+        feed = json.loads(bills_response.read().decode(
+            bills_response.info().getparam('charset') or 'utf-8'))['results']
+        return render_template('feed.mak', request_type=request_type,
+                               name='mako', feed=feed)
 
 @app.route('/timeline')
 def timeline():
