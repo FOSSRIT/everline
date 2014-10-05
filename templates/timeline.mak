@@ -9,7 +9,7 @@
         $(document).ready(function() {
             createStoryJS({
                 type:       'timeline',
-                width:      '800',
+                width:      '100%',
                 height:     '600',
                 source:     '/static/data/example_json.json',
                 embed_id:   'my-timeline'

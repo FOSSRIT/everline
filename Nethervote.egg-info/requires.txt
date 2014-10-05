@@ -2,3 +2,4 @@ flask
 flask-oauth
 evernote
 flask-mako
+feedparser

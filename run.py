@@ -32,8 +32,14 @@ def index():
     client = EvernoteClient(token=dev_token)
     userStore = client.get_user_store()
     user = userStore.getUser()
-    print user.username
-    return render_template('index.mak', name='mako', consumer_key=consumer_key)
+    username = user.username
+    return render_template('index.mak', name='mako', username=username)
+
+
+@app.route('/getevernote')
+def getevernote():
+    note_store = client.get_note_store()
+    note_store.listNotebooks()
 
 
 @app.route('/postevernote')
