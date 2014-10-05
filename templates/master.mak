@@ -18,5 +18,6 @@
 </div>
 
 <%include file="scripts.mak"/>
+<%include file="footer.mak"/>
 
 </body>
