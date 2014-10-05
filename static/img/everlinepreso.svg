@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="360.89443"
-     inkscape:cy="299.73412"
+     inkscape:zoom="1.979899"
+     inkscape:cx="207.22603"
+     inkscape:cy="495.44815"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -492,44 +492,44 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="41.919868"
+       x="40.390511"
        y="452.73581"
        id="text13319"
        sodipodi:linespacing="0%"><tspan
          sodipodi:role="line"
-         x="41.919868"
+         x="40.390511"
          y="452.73581"
          id="tspan13321">Infra</tspan><tspan
          sodipodi:role="line"
-         x="41.919868"
+         x="40.390511"
          y="452.73581"
          id="tspan13323" /></text>
     <path
        style="fill:#20c05c;fill-opacity:1;fill-rule:evenodd;stroke:#20c05c;stroke-width:0.87006187px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 43.564397,457.51943 50.339297,0"
+       d="m 42.107907,457.51943 50.339297,0"
        id="path13325"
        inkscape:connector-curvature="0" />
     <text
        sodipodi:linespacing="0%"
        id="text13291"
        y="521.54126"
-       x="237.49968"
+       x="236.76488"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan13293"
          y="521.54126"
-         x="237.49968"
+         x="236.76488"
          sodipodi:role="line">EvernoteAPI</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="237.49968"
+       x="237.3288"
        y="479.5423"
        id="text13299"
        sodipodi:linespacing="0%"><tspan
          id="tspan13303"
          sodipodi:role="line"
-         x="237.49968"
+         x="237.3288"
          y="479.5423">Sunlight Foundation</tspan></text>
     <text
        sodipodi:linespacing="0%"
@@ -546,43 +546,43 @@
        sodipodi:linespacing="0%"
        id="text13327"
        y="452.19751"
-       x="238.73007"
+       x="236.76488"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan13329"
          y="452.19751"
-         x="238.73007"
+         x="236.76488"
          sodipodi:role="line">Data</tspan><tspan
          id="tspan13331"
          y="452.19751"
-         x="238.73007"
+         x="236.76488"
          sodipodi:role="line" /></text>
     <path
        inkscape:connector-curvature="0"
        id="path13333"
-       d="m 240.37461,456.98113 50.33929,0"
+       d="m 238.48227,456.98113 50.33929,0"
        style="fill:#20c05c;fill-opacity:1;fill-rule:evenodd;stroke:#20c05c;stroke-width:0.87006187px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        sodipodi:linespacing="0%"
        id="text13283"
        y="501.63162"
-       x="118.88966"
+       x="116.40672"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan13285"
          y="501.63162"
-         x="118.88966"
+         x="116.40672"
          sodipodi:role="line">Bootstrap</tspan></text>
     <text
        sodipodi:linespacing="0%"
        id="text13401"
        y="479.5423"
-       x="120.31823"
+       x="117.9874"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan13403"
          y="479.5423"
-         x="120.31823"
+         x="117.9874"
          sodipodi:role="line">Angular.js</tspan></text>
     <text
        xml:space="preserve"
@@ -598,21 +598,21 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="118.01579"
+       x="116.40672"
        y="452.73581"
        id="text13363"
        sodipodi:linespacing="0%"><tspan
          sodipodi:role="line"
-         x="118.01579"
+         x="116.40672"
          y="452.73581"
          id="tspan13365">FrontEnd</tspan><tspan
          sodipodi:role="line"
-         x="118.01579"
+         x="116.40672"
          y="452.73581"
          id="tspan13367" /></text>
     <path
        style="fill:#20c05c;fill-opacity:1;fill-rule:evenodd;stroke:#20c05c;stroke-width:1.06440616px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 119.66032,457.51941 75.33929,0"
+       d="m 118.12411,457.51941 75.33929,0"
        id="path13369"
        inkscape:connector-curvature="0" />
     <g
