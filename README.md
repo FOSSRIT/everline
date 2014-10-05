@@ -1,13 +1,13 @@
 Everline
 ========
 
-Project for HackUpstate utilizing the Evernote API to build Civic Hacking Data
-Visualizations
+Project for [HackUpstate](http://hackupstate.com) utilizing the Evernote API to
+build Civic Hacking Data Visualizations using [Timeline.js](http://timeline.knightlab.com)
 
 Clone The Repo
 ---
 
-<code>git clone https://github.com/FOSSRIT/nethervote.git</code>
+<code>git clone https://github.com/FOSSRIT/everline.git</code>
 
 Install the Python Things
 ----
@@ -20,13 +20,17 @@ Install the Javascript-y Things
 
 ### NPM
 
-Make sure you have npm and node. The best way to do this is using [nvm](https://github.com/creationix/nvm)
-Getting nvm is easy. Simply run:
+Make sure you have npm and node. The best way to do this is using
+[nvm](https://github.com/creationix/nvm)
+Getting nvm is easy. Simply run: 
+<br/>
 `curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | bash`
 
-*The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).*
+*The script clones the nvm repository to `~/.nvm` and adds the source line to
+your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).*
 
 You can customize the install source, directory and profile using the `NVM_SOURCE`, `NVM_DIR` and `PROFILE` variables. Eg: 
+<br/>
 `curl ... | NVM_DIR=/usr/local/nvm bash` for a global install.
 
 Once you have nvm, install the latest version of node 
@@ -48,16 +52,16 @@ To install gulp:
 <em>linux hack</em>
 ---
 If you don't want to install gulp globally, you can run manually like so:
+<br/>
 <code>./node_modules/gulp/bin/gulp.js</code>
 
 <em>Windows hack</em>
 ---
 If you cannot just run `gulp`:
 
+<br/>
 `node .\node_modules\gulp\bin\gulp.js`
 
 Run the server
 ----
  <code>python app.py</code>
-
-
