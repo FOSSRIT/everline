@@ -38,6 +38,16 @@ def index():
     return render_template('index.mak', name='mako', username=username)
 
 
+@app.route('/getbooks')
+def getbooks():
+    client = EvernoteClient(token=dev_token)
+    noteStore = client.get_note_store()
+    notebooks = noteStore.listNotebooks(dev_token)
+    for n in notebooks:
+        print n.name
+    return "cool"
+
+
 @app.route('/getevernote')
 def getevernote():
     client = EvernoteClient(token=dev_token)

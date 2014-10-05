@@ -5,6 +5,7 @@
     width: 100%;
     min-height: 100%;
 }
+
 .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
     clear: none;
 }
@@ -16,6 +17,22 @@
 .jumbotron {
     padding-top: 10px;
     margin-bottom: -35px;
+}
+
+.vco-timeline .vco-navigation .timenav-background .timenav-line {
+    background-color: #20C05C !important;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker .line .event-line {
+    background: none repeat scroll 0% 0% #20C05C !important;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker.active .dot {
+    background: none repeat scroll 0% 0% #338059 !important;
+}
+
+.vco-timeline .vco-navigation .timenav .content .marker.active .flag .flag-content h3, .vco-timeline .vco-navigation .timenav .content .marker.active .flag-small .flag-content h3 {
+    color: #338059 !important;
 }
 
 .tab-pane {
