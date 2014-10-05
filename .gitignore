@@ -5,3 +5,4 @@ config.ini
 bower_components/
 node_modules/
 static/js/*.js
+*-deps.min.*
