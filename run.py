@@ -38,8 +38,11 @@ def index():
 
 @app.route('/getevernote')
 def getevernote():
+    client = EvernoteClient(token=dev_token)
+    userStore = client.get_user_store()
+    user = userStore.getUser()
     note_store = client.get_note_store()
-    note_store.listNotebooks()
+    print note_store.listNotebooks()
 
 
 @app.route('/postevernote')
