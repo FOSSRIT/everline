@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="207.22603"
-     inkscape:cy="495.44815"
+     inkscape:cx="466.7661"
+     inkscape:cy="944.4499"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -144,14 +144,14 @@
     <text
        sodipodi:linespacing="0%"
        id="text12289"
-       y="66.748947"
-       x="400.6268"
-       style="font-style:normal;font-weight:normal;font-size:58.66304779px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       y="62.252785"
+       x="400.32071"
+       style="font-style:normal;font-weight:normal;font-size:64.11412048px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan12291"
-         y="66.748947"
-         x="400.6268"
-         sodipodi:role="line">Objective:</tspan></text>
+         y="62.252785"
+         x="400.32071"
+         sodipodi:role="line">Objective</tspan></text>
     <text
        sodipodi:linespacing="0%"
        id="text12293"
@@ -244,19 +244,19 @@
        id="rect12461"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:2.04944968;stroke-opacity:1" />
     <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:2.05824232;stroke-opacity:1"
        id="rect12571"
-       width="317.14285"
-       height="101.42857"
-       x="394.28571"
-       y="10.933611" />
+       width="317.08463"
+       height="107.44176"
+       x="394.31482"
+       y="4.8913035" />
     <rect
-       y="11.553225"
-       x="394.9053"
-       height="265.90363"
-       width="317.33221"
+       y="5.5104609"
+       x="394.92346"
+       height="271.92825"
+       width="317.2959"
        id="rect12683"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:3.23922849;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#333333;stroke-width:3.27553129;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20.11197281px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -512,12 +512,12 @@
     <text
        sodipodi:linespacing="0%"
        id="text13291"
-       y="521.54126"
+       y="519.66345"
        x="236.76488"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan13293"
-         y="521.54126"
+         y="519.66345"
          x="236.76488"
          sodipodi:role="line">EvernoteAPI</tspan></text>
     <text
@@ -534,11 +534,11 @@
     <text
        sodipodi:linespacing="0%"
        id="text13307"
-       y="501.8623"
+       y="499.60287"
        x="237.49968"
        style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="501.8623"
+         y="499.60287"
          x="237.49968"
          sodipodi:role="line"
          id="tspan13309">Open Congress API</tspan></text>
@@ -666,6 +666,93 @@
          x="40.390511"
          y="541.54126"
          id="tspan13523">Pip</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.42939758px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="770.5"
+       y="359.40463"
+       id="text4268"
+       sodipodi:linespacing="0%"><tspan
+         sodipodi:role="line"
+         x="770.5"
+         y="359.40463"
+         id="tspan4270">EvernoteAPI</tspan><tspan
+         sodipodi:role="line"
+         x="770.5"
+         y="359.40463"
+         id="tspan4272" /></text>
+    <text
+       sodipodi:linespacing="0%"
+       id="text4274"
+       y="319.45059"
+       x="772.0683"
+       style="font-style:normal;font-weight:normal;font-size:47.92163086px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#20c05c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4276"
+         y="319.45059"
+         x="772.0683"
+         sodipodi:role="line">Features:</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4278"
+       d="m 771.92794,330.58444 242.72486,0"
+       style="fill:#20c05c;fill-opacity:1;fill-rule:evenodd;stroke:#20c05c;stroke-width:1.26848471px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="0%"
+       id="text4280"
+       y="392.66919"
+       x="770.68939"
+       style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="392.66919"
+         x="770.68939"
+         sodipodi:role="line"
+         id="tspan4282">/getevernotes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="769.6792"
+       y="415.90271"
+       id="text4284"
+       sodipodi:linespacing="0%"><tspan
+         id="tspan4286"
+         sodipodi:role="line"
+         x="769.6792"
+         y="415.90271">/postevernotes</tspan></text>
+    <text
+       sodipodi:linespacing="0%"
+       id="text4288"
+       y="454.28851"
+       x="475.72482"
+       style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="454.28851"
+         x="475.72482"
+         sodipodi:role="line"
+         id="tspan4290" /></text>
+    <path
+       style="fill:#20c05c;fill-opacity:1;fill-rule:evenodd;stroke:#20c05c;stroke-width:1.23763382px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 770.83267,366.0674 101.85707,0"
+       id="path4292"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.49866104px;line-height:0%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="235.75473"
+       y="539.724"
+       id="text4312"
+       sodipodi:linespacing="0%"><tspan
+         sodipodi:role="line"
+         x="235.75473"
+         y="539.724"
+         id="tspan4314">Google News</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       id="rect4316"
+       width="259.60919"
+       height="160.61426"
+       x="763.67529"
+       y="266.4635" />
   </g>
   <script
      id="sozi-script"
