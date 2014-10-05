@@ -29,7 +29,8 @@ Getting nvm is easy. Simply run:
 *The script clones the nvm repository to `~/.nvm` and adds the source line to
 your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).*
 
-You can customize the install source, directory and profile using the `NVM_SOURCE`, `NVM_DIR` and `PROFILE` variables. Eg: 
+You can customize the install source, directory and profile using the
+`NVM_SOURCE`, `NVM_DIR` and `PROFILE` variables. Eg: 
 <br/>
 `curl ... | NVM_DIR=/usr/local/nvm bash` for a global install.
 
@@ -39,7 +40,9 @@ Once you have nvm, install the latest version of node
 
 ### Bower
 
-To install bower (our front end javascript package manager) run `npm install -g bower`
+To install bower (our front end javascript package manager) run 
+<br/>
+`npm install -g bower`
 
 *This installs the bower package manager globally on your box.*
 
