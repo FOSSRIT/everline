@@ -60,3 +60,13 @@ body, html {
     padding: 10px 0;
     background-color: #FFF;
 }
+
+.label-green {
+    background: #20c05c;
+}
+
+.text-white {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+

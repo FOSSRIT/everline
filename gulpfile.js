@@ -34,6 +34,7 @@ gulp.task('bower-concat-js', ['bower'], function () {
             'bower_components/jquery/dist/jquery.js',
             'bower_components/bootstrap/dist/js/bootstrap.js',
             'bower_components/pace/pace.js',
+            'bower_components/bootstrap/js/carousel.js',
         ])
         .pipe(gulp.dest('static/js/deps/'));
 });

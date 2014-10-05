@@ -4,15 +4,14 @@
   <li><a href="#timeline" role="tab" data-toggle="pill">timeline</a></li>
 </ul>
 
-<p class="pull-right">Logged into Evernote as ${username}</p>
+<p class="pull-right ">Logged into Evernote as <span class="label label-green "><a class="text-white" target="_blank" href="http://sandbox.evernote.com">${username}</a></span></p>
 
 <div class="tab-content">
     <div class="tab-pane fade" id="home">
         <p>home</p>
     </div>
     <div class="tab-pane fade" id="about">
-        <h1>About</h1>
-        <p>AYO DECAUSE, WRITE SOME COOL SHIT ABOUT HOW THIS APP IS COOL N SHIT</p>
+        <%include file="preso.mak" />
     </div>
     <div class="tab-pane fade in active" id="timeline">
         <%include file="timeline.mak" />
