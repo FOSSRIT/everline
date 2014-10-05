@@ -8,13 +8,20 @@ timelineDirectives.directive('timeLine', ['$http', function ($http) {
         replace: true,
         template: '<div id="my-timeline"></div>',
         link: function (scope, element, attrs) {
-            createStoryJS({
-                type:       'timeline',
-                width:      '100%',
-                height:     '600',
-                source:     '/static/data/example_json.json',
-                embed_id:   'my-timeline'
-            });
+            $http({method: 'GET', url: '/getevernote'})
+                .success(function(data, status) {
+                    console.log(data);
+                    createStoryJS({
+                        type:       'timeline',
+                        width:      '100%',
+                        height:     '600',
+                        source:     data,
+                        embed_id:   'my-timeline'
+                    });
+                })
+                .error(function (data, status) {
+                    console.error("error getting data");
+                });
         }
     };
 }]);

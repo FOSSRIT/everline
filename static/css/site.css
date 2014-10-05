@@ -19,6 +19,10 @@
     margin-bottom: -35px;
 }
 
+.vco-timeline .vco-navigation .timenav .content .era1 div {
+    background: none !important;
+}
+
 .vco-timeline .vco-navigation .timenav-background .timenav-line {
     background-color: #20C05C !important;
 }

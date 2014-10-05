@@ -4,12 +4,12 @@
     {
         "headline":"Sh*t People Say",
         "type":"default",
-		"text":"People say stuff",
-		"startDate":"2012,1,26",
+        "text":"People say stuff",
+        "startDate":"2012,1,26",
         "date": [
             {
                 "startDate":"2011,12,12",
-				"endDate":"2012,1,27",
+                "endDate":"2012,1,27",
                 "headline":"Vine",
                 "text":"<p>Vine Test</p>",
                 "asset":
@@ -21,7 +21,7 @@
             },
             {
                 "startDate":"2012,1,26",
-				"endDate":"2012,1,27",
+                "endDate":"2012,1,27",
                 "headline":"Sh*t Politicians Say",
                 "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>",
                 "asset":
@@ -42,7 +42,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,26",
                 "headline":"Sh*t Chicagoans Say",
                 "text":"",
@@ -53,7 +53,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2011,12,12",
                 "headline":"Sh*t Girls Say",
                 "text":"",
@@ -64,7 +64,7 @@
                     "caption":"Writers & Creators: Kyle Humphrey & Graydon Sheppard"
                 }
             },
-			{
+            {
                 "startDate":"2012,1,4",
                 "headline":"Sh*t Broke People Say",
                 "text":"",
@@ -76,7 +76,7 @@
                 }
             },
 
-			{
+            {
                 "startDate":"2012,1,4",
                 "headline":"Sh*t Silicon Valley Says",
                 "text":"",
@@ -87,7 +87,7 @@
                     "caption":"written, filmed, and edited by Kate Imbach & Tom Conrad"
                 }
             },
-			{
+            {
                 "startDate":"2011,12,25",
                 "headline":"Sh*t Vegans Say",
                 "text":"",
@@ -98,7 +98,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,23",
                 "headline":"Sh*t Graphic Designers Say",
                 "text":"",
@@ -109,7 +109,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2011,12,30",
                 "headline":"Sh*t Wookiees Say",
                 "text":"",
@@ -120,7 +120,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,17",
                 "headline":"Sh*t People Say About Sh*t People Say Videos",
                 "text":"",
@@ -131,7 +131,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,20",
                 "headline":"Sh*t Social Media Pros Say",
                 "text":"",
@@ -142,7 +142,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,11",
                 "headline":"Sh*t Old People Say About Computers",
                 "text":"",
@@ -153,7 +153,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,11",
                 "headline":"Sh*t College Freshmen Say",
                 "text":"",
@@ -164,7 +164,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2011,12,16",
                 "headline":"Sh*t Girls Say - Episode 2",
                 "text":"",
@@ -175,7 +175,7 @@
                     "caption":"Writers & Creators: Kyle Humphrey & Graydon Sheppard"
                 }
             },
-			{
+            {
                 "startDate":"2011,12,24",
                 "headline":"Sh*t Girls Say - Episode 3 Featuring Juliette Lewis",
                 "text":"",
@@ -186,7 +186,7 @@
                     "caption":"Writers & Creators: Kyle Humphrey & Graydon Sheppard"
                 }
             },
-			{
+            {
                 "startDate":"2012,1,27",
                 "headline":"Sh*t Web Designers Say",
                 "text":"",
@@ -197,7 +197,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,12",
                 "headline":"Sh*t Hipsters Say",
                 "text":"No meme is complete without a bit of hipster-bashing.",
@@ -208,7 +208,7 @@
                     "caption":"Written, Directed, Conceptualized and Performed by Carrie Valentine and Jessica Katz"
                 }
             },
-			{
+            {
                 "startDate":"2012,1,6",
                 "headline":"Sh*t Cats Say",
                 "text":"No meme is complete without cats. This had to happen, obviously.",
@@ -219,7 +219,7 @@
                     "caption":""
                 }
             },
-			{
+            {
                 "startDate":"2012,1,21",
                 "headline":"Sh*t Cyclists Say",
                 "text":"",
@@ -230,7 +230,7 @@
                     "caption":"Video script, production, and editing by Allen Krughoff of Hardcastle Photography"
                 }
             },
-			{
+            {
                 "startDate":"2011,12,30",
                 "headline":"Sh*t Yogis Say",
                 "text":"",
@@ -245,7 +245,7 @@
 
 
 
-			{
+            {
                 "startDate":"2012,1,18",
                 "headline":"Sh*t New Yorkers Say",
                 "text":"",

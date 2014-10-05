@@ -63,13 +63,38 @@ def getevernote():
         max_notes,
         result_spec)
 
-    notes = []
+    notes = {"timeline": {
+        "headline": "Sh*t People Say",
+        "type": "default",
+        "text": "People say stuff",
+        "startDate": "2014,8,26",
+        "date": [],
+        "era": [
+            {
+                "startDate": "2014,06,10",
+                "endDate": "2014,08,11",
+                "headline": "Headline Goes Here",
+                "text": "<p>Body text goes here, some HTML is OK</p>",
+                "tag": "This is Optional"
+            }
+        ]
+    }}
+
     for note in result_list.notes:
+        content = note_store.getNoteContent(dev_token, note.guid)
+        content_list = content.split(',', 3)
+        media = False
+        if (content.contains(":wikipedia:") or content.contains(":twitter:") or
+                content.contains(":youtube:")):
+            media = True
+
         note_json = {
-            "title": note.title,
-            "content": note_store.getNoteContent(dev_token, note.guid)
+            "startDate": content_list[1].replace('-', ','),
+            "endDate": content_list[2].replace('-', ','),
+            "headline": note.title,
+            "text": content_list[3]
         }
-        notes.append(note_json)
+        notes['timeline']['date'].append(note_json)
 
     return json.dumps(notes)
 
@@ -217,6 +242,7 @@ def feed():
             bills_response.info().getparam('charset') or 'utf-8'))['results']
         return render_template('feed.mak', request_type=request_type,
                                name='mako', feed=feed)
+
 
 @app.route('/timeline')
 def timeline():
