@@ -9,10 +9,9 @@
 
 <div class="jumbotron background img-responsive">
     <div class="container">
-        <div class='col-md-9'>
+        <div class="row">
             ${self.body()}
             <%include file="nav.mak" />
-            </div>
         </div>
     </div>
 </div>

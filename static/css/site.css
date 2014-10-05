@@ -1,10 +1,29 @@
 .background {
-    background-image: url(/static/img/rocmagic.png);
     background-size: cover;
     margin-bottom: 0px;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100%;
+}
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: none;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #20C05C;
+}
+
+.jumbotron {
+    padding-top: 10px;
+    margin-bottom: -35px;
+}
+
+.tab-pane {
+    clear: both;
+}
+
+a {
+    color: #338059;
 }
 
 body, html {

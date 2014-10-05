@@ -2,7 +2,7 @@
 
 var timelineDirectives = angular.module('timelineDirectives', []);
 
-timelineDirectives.directive('timeLine', function () {
+timelineDirectives.directive('timeLine', ['$http', function ($http) {
     return {
         restrict: 'E',
         replace: true,
@@ -16,5 +16,5 @@ timelineDirectives.directive('timeLine', function () {
                 embed_id:   'my-timeline'
             });
         }
-    }
-});
+    };
+}]);
