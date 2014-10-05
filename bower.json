@@ -11,6 +11,7 @@
   "license": "AGPLv3+",
   "dependencies": {
     "angularjs": "~1.2.26",
-    "timeline.js": "~2.33.1"
+    "timeline.js": "~2.33.1",
+    "bootstrap": "~3.2.0"
   }
 }
