@@ -7,9 +7,11 @@ License: AGPLv3+
 
 import ConfigParser
 import feedparser
+import json
+import urllib2
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
-from flask import redirect, url_for
+from flask import redirect, url_for, request
 
 from evernote.api.client import EvernoteClient
 
@@ -157,9 +159,16 @@ def about():
 
 @app.route('/feed')
 def feed():
-    d = google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format('iphone6') + "&output=rss"
-    feed = feedparser.parse( google_news_rss_url )
-    return render_template('feed.mak', name='mako', feed=feed)
+    query = request.args.get('q').lower()
+    request_type = request.args.get('type').lower()
+    if request_type == 'news':
+        google_news_rss_url = "https://news.google.com/news/feeds?q=" + "{0}".format(query) + "&output=rss"
+        feed = feedparser.parse( google_news_rss_url )
+        return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
+    elif request_type == 'bills':
+        bills_response = urllib2.urlopen("http://congress.api.sunlightfoundation.com/bills/search?query=" + "{0}".format(query) + "&apikey=9b21768d77c648a39ba9b9e77cda089c")
+        feed = json.loads( bills_response.read().decode(bills_response.info().getparam('charset') or 'utf-8') )
+        return render_template('feed.mak', request_type=request_type, name='mako', feed=feed)
 
 @app.route('/timeline')
 def timeline():
